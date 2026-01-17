@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nexxus Homes - Premium smart home automation and security systems for Metro Detroit's finest properties. Partner with us to deliver Certified Smart Homes.">
+    <meta name="keywords" content="smart home, home automation, security systems, Birmingham, Bloomfield Hills, Royal Oak, Metro Detroit, builders, real estate agents">
+    <title>Nexxus Homes | Premium Smart Home Solutions for Metro Detroit</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                        <circle cx="12" cy="13" r="3"/>
+                        <path d="M12 10v-2M12 18v-2M9 13H7M17 13h-2"/>
+                    </svg>
+                </div>
+                <div class="logo-text-container">
+                    <span class="logo-text">NEXXUS</span>
+                    <span class="logo-subtext">Smart Homes</span>
+                </div>
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#services" class="nav__link">Services</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#partners" class="nav__link">Partners</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link nav__link--cta">Get Started</a>
+                    </li>
+                </ul>
+
+                <button class="nav__close" id="nav-close" aria-label="Close menu">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+
+            <button class="nav__toggle" id="nav-toggle" aria-label="Open menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero__background">
+                <div class="hero__gradient"></div>
+            </div>
+            <div class="hero__content container">
+                <div class="hero__badge">
+                    <svg class="hero__badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                        <polyline points="22 4 12 14.01 9 11.01"/>
+                    </svg>
+                    Trusted by Metro Detroit's Premier Builders
+                </div>
+                <h1 class="hero__title">
+                    Elevate Every Home to
+                    <span class="text-gradient">Certified Smart</span>
+                </h1>
+                <p class="hero__description">
+                    Transform properties into move-in ready smart ecosystems.
+                    Help your clients experience the future of living while
+                    increasing property value and closing faster.
+                </p>
+                <div class="hero__cta">
+                    <a href="#contact" class="btn btn--primary">Partner With Us</a>
+                    <a href="#services" class="btn btn--outline">View Packages</a>
+                </div>
+                <div class="hero__stats">
+                    <div class="stat">
+                        <span class="stat__number">2013</span>
+                        <span class="stat__label">Automating Since</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat__number">99%</span>
+                        <span class="stat__label">Guaranteed Uptime</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat__number">24/7</span>
+                        <span class="stat__label">Support Available</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__scroll">
+                <a href="#services" class="scroll-indicator" aria-label="Scroll to services">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 5v14M5 12l7 7 7-7"/>
+                    </svg>
+                </a>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services" id="services">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__tag">Our Packages</span>
+                    <h2 class="section__title">Smart Home Solutions <br>for Every Budget</h2>
+                    <p class="section__description">
+                        From essential smart features to complete luxury automation,
+                        we offer tiered packages designed for Metro Detroit's discerning homeowners.
+                    </p>
+                </div>
+
+                <div class="packages">
+                    <!-- Essentials Package -->
+                    <div class="package">
+                        <div class="package__header">
+                            <span class="package__tag">Most Popular</span>
+                            <h3 class="package__name">The Essentials Package</h3>
+                            <div class="package__price">
+                                <span class="price__amount">$1,900</span>
+                                <span class="price__range">- $2,500</span>
+                            </div>
+                            <p class="package__tagline">Perfect for new construction & listing upgrades</p>
+                        </div>
+                        <div class="package__body">
+                            <ul class="package__features">
+                                <li class="feature">
+                                    <svg class="feature__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                        <polyline points="22 4 12 14.01 9 11.01"/>
+                                    </svg>
+                                    <span>Ring Video Doorbell Pro 2</span>
+                                </li>
+                                <li class="feature">
+                                    <svg class="feature__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                        <polyline points="22 4 12 14.01 9 11.01"/>
+                                    </svg>
+                                    <span>Yale Assure Smart Lock</span>
+                                </li>
+                                <li class="feature">
+                                    <svg class="feature__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                        <polyline points="22 4 12 14.01 9 11.01"/>
+                                    </svg>
+                                    <span>Ecobee Smart Thermostat</span>
+                                </li>
+                                <li class="feature">
+                                    <svg class="feature__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                        <polyline points="22 4 12 14.01 9 11.01"/>
+                                    </svg>
+                                    <span>Eero Pro or UniFi Dream Router</span>
+                                </li>
+                                <li class="feature">
+                                    <svg class="feature__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                        <polyline points="22 4 12 14.01 9 11.01"/>
+                                    </svg>
+                                    <span>Basic Scene Configuration</span>
+                                </li>
+                                <li class="feature">
+                                    <svg class="feature__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                        <polyline points="22 4 12 14.01 9 11.01"/>
+                                    </svg>
+                                    <span>Professional Installation</span>
+                                </li>
+                            </ul>
+                            <a href="#contact" class="btn btn--secondary btn--full">Get Quote</a>
+                        </div>
+                    </div>
+
+                    <!-- Executive Suite -->
+                    <div class="package package--featured">
+                        <div class="package__header">
+                            <span class="package__tag">Premium Choice</span>
+                            <h3 class="package__name">Executive Smart Suite</h3>
+                            <div class="package__price">
+                                <span class="price__amount">$8,500</span>
+                                <span class="price__range">- $12,000+</span>
+                            </div>
+                            <p class="package__tagline">Complete luxury smart home ecosystem</p>
+                        </div>
+                        <div class="package__body">
+                            <ul class="package__features">
+                                <li class="feature">
+                                    <svg class="feature__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                        <polyline points="22 4 12 14.01 9 11.01"/>
+                                    </svg>
+                                    <span>Full UniFi Network Rack System</span>
+                                </li>
+                                <li class="feature">
+                                    <svg class="feature__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                        <polyline points="22 4 12 14.01 9 11.01"/>
+                                    </svg>
+                                    <span>Lutron Lighting (Main Floor + Outdoor)</span>
+                                </li>
+                                <li class="feature">
+                                    <svg class="feature__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                        <polyline points="22 4 12 14.01 9 11.01"/>
+                                    </svg>
+                                    <span>4x 4K PoE Security Cameras</span>
+                                </li>
+                                <li class="feature">
+                                    <svg class="feature__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                        <polyline points="22 4 12 14.01 9 11.01"/>
+                                    </svg>
+                                    <span>Smart Doorbell, Alarm Hub & Flood Sensors</span>
+                                </li>
+                                <li class="feature">
+                                    <svg class="feature__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                        <polyline points="22 4 12 14.01 9 11.01"/>
+                                    </svg>
+                                    <span>2x Sonos Amp Zones (Kitchen/Patio)</span>
+                                </li>
+                                <li class="feature">
+                                    <svg class="feature__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                        <polyline points="22 4 12 14.01 9 11.01"/>
+                                    </svg>
+                                    <span>White Glove Onboarding Experience</span>
+                                </li>
+                            </ul>
+                            <a href="#contact" class="btn btn--primary btn--full">Get Quote</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Support Plan -->
+                <div class="support-plan">
+                    <div class="support-plan__content">
+                        <div class="support-plan__icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                            </svg>
+                        </div>
+                        <div class="support-plan__info">
+                            <h3 class="support-plan__title">System Health Plan</h3>
+                            <p class="support-plan__description">
+                                Remote monitoring, priority support, and quarterly health checks
+                                to keep every smart home running flawlessly.
+                            </p>
+                        </div>
+                        <div class="support-plan__pricing">
+                            <div class="support-plan__option">
+                                <span class="support-plan__price">$29</span>
+                                <span class="support-plan__period">/month</span>
+                            </div>
+                            <span class="support-plan__or">or</span>
+                            <div class="support-plan__option">
+                                <span class="support-plan__price">$300</span>
+                                <span class="support-plan__period">/year</span>
+                                <span class="support-plan__save">Save $48</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about" id="about">
+            <div class="container">
+                <div class="about__grid">
+                    <div class="about__content">
+                        <span class="section__tag">About Nexxus Homes</span>
+                        <h2 class="section__title">Metro Detroit's Trusted Smart Home Partner</h2>
+                        <p class="about__text">
+                            Based in the heart of Metro Detroit, Nexxus Homes specializes in
+                            transforming properties into intelligent, connected living spaces.
+                            We partner exclusively with builders and real estate professionals
+                            who understand that today's buyers expect more.
+                        </p>
+                        <p class="about__text">
+                            Every installation carries our <strong>"Certified Smart Home"</strong> designation,
+                            signaling to buyers that the property features a professionally
+                            integrated smart ecosystem - not a collection of disconnected gadgets.
+                        </p>
+                        <div class="about__features">
+                            <div class="about__feature">
+                                <div class="about__feature-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                    </svg>
+                                </div>
+                                <div class="about__feature-text">
+                                    <h4>Licensed & Insured</h4>
+                                    <p>Full liability coverage for every installation</p>
+                                </div>
+                            </div>
+                            <div class="about__feature">
+                                <div class="about__feature-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"/>
+                                        <path d="M12 6v6l4 2"/>
+                                    </svg>
+                                </div>
+                                <div class="about__feature-text">
+                                    <h4>Next Day Free Quotes</h4>
+                                    <p>Fast turnaround to meet your closing dates</p>
+                                </div>
+                            </div>
+                            <div class="about__feature">
+                                <div class="about__feature-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                        <circle cx="9" cy="7" r="4"/>
+                                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                        <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                                    </svg>
+                                </div>
+                                <div class="about__feature-text">
+                                    <h4>White Glove Service</h4>
+                                    <p>Complete handoff training for homeowners</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about__visual">
+                        <div class="about__image-container">
+                            <div class="about__image-placeholder">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                                    <polyline points="9 22 9 12 15 12 15 22"/>
+                                </svg>
+                                <span>Smart Home Excellence</span>
+                            </div>
+                        </div>
+                        <div class="about__badge">
+                            <span class="about__badge-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                                </svg>
+                            </span>
+                            <div class="about__badge-text">
+                                <strong>Certified Smart Home</strong>
+                                <span>Professional Integration</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Partners Section -->
+        <section class="partners" id="partners">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__tag">Partner Benefits</span>
+                    <h2 class="section__title">Built for Building Professionals</h2>
+                    <p class="section__description">
+                        We understand the pressures of construction timelines and real estate transactions.
+                        That's why we've designed our partnership program around your needs.
+                    </p>
+                </div>
+
+                <div class="partners__grid">
+                    <!-- For Builders -->
+                    <div class="partner-card">
+                        <div class="partner-card__header">
+                            <div class="partner-card__icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M2 20h20M5 20V8.5L12 3l7 5.5V20M9 20v-6h6v6"/>
+                                </svg>
+                            </div>
+                            <h3 class="partner-card__title">For Builders</h3>
+                        </div>
+                        <p class="partner-card__description">
+                            Add a premium differentiator for less than the cost of a granite upgrade.
+                            Stand out in Birmingham, Bloomfield Hills, and Royal Oak's competitive market.
+                        </p>
+                        <ul class="partner-card__benefits">
+                            <li>
+                                <svg class="benefit__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                <span>Pre-wire consultation during construction</span>
+                            </li>
+                            <li>
+                                <svg class="benefit__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                <span>Installation coordinated with your schedule</span>
+                            </li>
+                            <li>
+                                <svg class="benefit__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                <span>We handle all homeowner tech questions</span>
+                            </li>
+                            <li>
+                                <svg class="benefit__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                <span>Volume pricing for developments</span>
+                            </li>
+                            <li>
+                                <svg class="benefit__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                <span>"Certified Smart Home" marketing materials</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- For Agents -->
+                    <div class="partner-card">
+                        <div class="partner-card__header">
+                            <div class="partner-card__icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M20 7h-9M14 17H5M17 17a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM7 7a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                </svg>
+                            </div>
+                            <h3 class="partner-card__title">For Real Estate Agents</h3>
+                        </div>
+                        <p class="partner-card__description">
+                            Create emotional connections during showings.
+                            <em>"Alexa, turn on Open House"</em> transforms a listing into an experience buyers remember.
+                        </p>
+                        <ul class="partner-card__benefits">
+                            <li>
+                                <svg class="benefit__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                <span>Increase perceived home value</span>
+                            </li>
+                            <li>
+                                <svg class="benefit__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                <span>Memorable open house experiences</span>
+                            </li>
+                            <li>
+                                <svg class="benefit__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                <span>Move-in ready smart ecosystem</span>
+                            </li>
+                            <li>
+                                <svg class="benefit__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                <span>Seller upgrade recommendations</span>
+                            </li>
+                            <li>
+                                <svg class="benefit__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                <span>Commission on referrals</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Testimonial -->
+                <div class="testimonial">
+                    <blockquote class="testimonial__quote">
+                        "Adding Nexxus Homes packages to our spec builds has been a game-changer.
+                        Buyers in Birmingham expect smart features now - it's no longer a luxury,
+                        it's an expectation. And having Nexxus handle all the tech support calls?
+                        That alone is worth the partnership."
+                    </blockquote>
+                    <div class="testimonial__author">
+                        <div class="testimonial__avatar">RT</div>
+                        <div class="testimonial__info">
+                            <strong>Ryan Teahan</strong>
+                            <span>The Agency, Birmingham</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="contact__grid">
+                    <div class="contact__info">
+                        <span class="section__tag">Get Started</span>
+                        <h2 class="section__title">Let's Build Smart Together</h2>
+                        <p class="contact__description">
+                            Ready to add smart home packages to your builds or listings?
+                            Reach out for a partnership consultation or project quote.
+                        </p>
+
+                        <div class="contact__details">
+                            <div class="contact__detail">
+                                <div class="contact__detail-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                    </svg>
+                                </div>
+                                <div class="contact__detail-text">
+                                    <strong>Phone (Call or Text)</strong>
+                                    <a href="tel:+12489189622">(248) 918-9622</a>
+                                </div>
+                            </div>
+                            <div class="contact__detail">
+                                <div class="contact__detail-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                        <polyline points="22,6 12,13 2,6"/>
+                                    </svg>
+                                </div>
+                                <div class="contact__detail-text">
+                                    <strong>Email</strong>
+                                    <a href="mailto:contact@nexxushome.com">contact@nexxushome.com</a>
+                                </div>
+                            </div>
+                            <div class="contact__detail">
+                                <div class="contact__detail-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                        <circle cx="12" cy="10" r="3"/>
+                                    </svg>
+                                </div>
+                                <div class="contact__detail-text">
+                                    <strong>Service Area</strong>
+                                    <span>Serving All of Southeast Michigan</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact__form-container">
+                        <form class="contact__form" id="contact-form">
+                            <div class="form__group">
+                                <label for="name" class="form__label">Full Name</label>
+                                <input type="text" id="name" name="name" class="form__input" required placeholder="John Smith">
+                            </div>
+                            <div class="form__group">
+                                <label for="email" class="form__label">Email Address</label>
+                                <input type="email" id="email" name="email" class="form__input" required placeholder="john@company.com">
+                            </div>
+                            <div class="form__group">
+                                <label for="phone" class="form__label">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" class="form__input" placeholder="(248) 555-0000">
+                            </div>
+                            <div class="form__group">
+                                <label for="type" class="form__label">I am a...</label>
+                                <select id="type" name="type" class="form__select" required>
+                                    <option value="">Select your role</option>
+                                    <option value="builder">Builder / Contractor</option>
+                                    <option value="agent">Real Estate Agent</option>
+                                    <option value="homeowner">Homeowner</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form__group">
+                                <label for="message" class="form__label">Tell us about your project</label>
+                                <textarea id="message" name="message" class="form__textarea" rows="4" placeholder="Number of homes, timeline, specific needs..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn--primary btn--full">
+                                Send Message
+                                <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="5" y1="12" x2="19" y2="12"/>
+                                    <polyline points="12 5 19 12 12 19"/>
+                                </svg>
+                            </button>
+                        </form>
+                        <div class="form__success" id="form-success">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                <polyline points="22 4 12 14.01 9 11.01"/>
+                            </svg>
+                            <h4>Message Sent!</h4>
+                            <p>We'll be in touch within 24 hours.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <a href="#" class="nav__logo">
+                        <div class="logo-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                                <circle cx="12" cy="13" r="3"/>
+                                <path d="M12 10v-2M12 18v-2M9 13H7M17 13h-2"/>
+                            </svg>
+                        </div>
+                        <div class="logo-text-container">
+                            <span class="logo-text">NEXXUS</span>
+                            <span class="logo-subtext">Smart Homes</span>
+                        </div>
+                    </a>
+                    <p class="footer__tagline">
+                        Creating simpler, safer, smarter homes across Southeast Michigan.
+                    </p>
+                </div>
+
+                <div class="footer__links">
+                    <h4 class="footer__heading">Quick Links</h4>
+                    <ul>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#partners">Partner Program</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__links">
+                    <h4 class="footer__heading">Service Area</h4>
+                    <ul>
+                        <li>Serving All of</li>
+                        <li>Southeast Michigan</li>
+                    </ul>
+                </div>
+
+                <div class="footer__links">
+                    <h4 class="footer__heading">Contact</h4>
+                    <ul>
+                        <li><a href="tel:+12489189622">(248) 918-9622</a></li>
+                        <li><a href="mailto:contact@nexxushome.com">contact@nexxushome.com</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; 2025 Nexxus Homes. All rights reserved.</p>
+                <p>Licensed & Insured | Metro Detroit, Michigan</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
