@@ -474,4 +474,241 @@
         document.body.appendChild(script);
     }
 
+    // ============================================
+    // PRODUCT MODAL & HARDWARE SUITES
+    // ============================================
+    const productData = {
+        'philips-hue': {
+            name: 'Philips Hue',
+            products: [
+                { id: 'hue-bridge-pro', name: 'Hue Bridge Pro', description: 'Control up to 150 lights, 70% faster processor', price: 89.99 },
+                { id: 'hue-starter-kit', name: 'White & Color Starter Kit (3 bulbs + Bridge)', description: '3 A19 bulbs with 16 million colors', price: 109.99 },
+                { id: 'hue-essential-4pack', name: 'Essential Bulbs 4-Pack', description: 'Color ambiance bulbs, budget-friendly', price: 59.99 },
+                { id: 'hue-lightstrip', name: 'Lightstrip Plus (6.6ft)', description: 'Flexible LED strip for ambient lighting', price: 79.99 },
+                { id: 'hue-dimmer', name: 'Dimmer Switch', description: 'Wireless wall switch, no wiring needed', price: 27.99 },
+                { id: 'hue-motion-sensor', name: 'Motion Sensor', description: 'Automatic lights on motion detection', price: 39.99 },
+                { id: 'hue-play-bar', name: 'Play Light Bar (2-pack)', description: 'Bias lighting for TV or monitor', price: 129.99 },
+                { id: 'hue-secure-doorbell', name: 'Secure Video Doorbell', description: '2K fisheye camera, 24hr history included', price: 169.99 },
+                { id: 'hue-outdoor-spot', name: 'Outdoor Lily Spot Light', description: 'Weather-resistant garden spotlights', price: 139.99 },
+                { id: 'hue-secure-sub', name: 'Secure Plus (1 year)', description: '60-day cloud storage for cameras', price: 119.99 }
+            ]
+        },
+        'google-nest': {
+            name: 'Google Nest',
+            products: [
+                { id: 'nest-thermostat', name: 'Nest Thermostat', description: 'Energy-saving smart thermostat', price: 129.99 },
+                { id: 'nest-learning', name: 'Nest Learning Thermostat (4th Gen)', description: 'Learns your schedule, maximum savings', price: 279.99 },
+                { id: 'nest-doorbell', name: 'Nest Doorbell (Wired, 3rd Gen)', description: '2K HDR video with Gemini AI', price: 179.99 },
+                { id: 'nest-cam-indoor', name: 'Nest Cam (Indoor, Wired)', description: '1080p HDR, 24/7 recording ready', price: 99.99 },
+                { id: 'nest-cam-outdoor', name: 'Nest Cam (Outdoor, Battery)', description: 'Wire-free, weather-resistant', price: 179.99 },
+                { id: 'nest-cam-2pack', name: 'Nest Cam 2-Pack (Indoor/Outdoor)', description: 'Bundle savings on cameras', price: 279.99 },
+                { id: 'nest-hub', name: 'Nest Hub (2nd Gen)', description: '7" smart display with sleep sensing', price: 99.99 },
+                { id: 'nest-audio', name: 'Nest Audio', description: 'Premium smart speaker', price: 99.99 },
+                { id: 'nest-mini', name: 'Nest Mini (2nd Gen)', description: 'Compact smart speaker', price: 49.99 },
+                { id: 'nest-temp-sensor', name: 'Temperature Sensor (2nd Gen)', description: 'Room-specific climate control', price: 39.99 },
+                { id: 'nest-aware-annual', name: 'Google Home Premium (1 year)', description: '30-day video history, Gemini features', price: 100.00 }
+            ]
+        },
+        'ring': {
+            name: 'Ring',
+            products: [
+                { id: 'ring-doorbell-4', name: 'Ring Video Doorbell 4', description: '1080p HD, color night vision', price: 199.99 },
+                { id: 'ring-doorbell-pro2', name: 'Ring Video Doorbell Pro 2', description: '1536p HD, 3D motion detection', price: 249.99 },
+                { id: 'ring-indoor-cam', name: 'Indoor Cam Plus', description: 'Compact 1080p indoor camera', price: 59.99 },
+                { id: 'ring-outdoor-cam', name: 'Outdoor Cam Plus (Battery)', description: 'Wire-free outdoor security', price: 99.99 },
+                { id: 'ring-floodlight-pro', name: 'Floodlight Cam Pro 4K', description: '4K video with bird\'s eye view', price: 279.99 },
+                { id: 'ring-alarm-5', name: 'Alarm Security Kit (5-piece)', description: 'Base station, keypad, sensors', price: 199.99 },
+                { id: 'ring-alarm-8', name: 'Alarm Security Kit (8-piece)', description: 'Extended coverage package', price: 249.99 },
+                { id: 'ring-alarm-pro', name: 'Alarm Pro Security Kit', description: 'Built-in Wi-Fi router, local storage', price: 349.99 },
+                { id: 'ring-contact-sensor', name: 'Contact Sensor (2-pack)', description: 'Door/window monitoring', price: 39.99 },
+                { id: 'ring-motion-sensor', name: 'Motion Detector', description: 'PIR motion detection for alarm', price: 29.99 },
+                { id: 'ring-protect-plus', name: 'Ring Protect Plus (1 year)', description: '180-day history, all devices', price: 100.00 }
+            ]
+        },
+        'blink': {
+            name: 'Blink',
+            products: [
+                { id: 'blink-mini-2', name: 'Blink Mini 2', description: 'Indoor plug-in camera', price: 39.99 },
+                { id: 'blink-mini-3pack', name: 'Blink Mini 2 (3-pack)', description: 'Bundle savings on indoor cams', price: 69.99 },
+                { id: 'blink-outdoor-4', name: 'Blink Outdoor 4', description: '2-year battery, wire-free', price: 99.99 },
+                { id: 'blink-outdoor-3cam', name: 'Blink Outdoor 4 (3-camera)', description: 'Multi-camera bundle with sync module', price: 189.99 },
+                { id: 'blink-outdoor-5cam', name: 'Blink Outdoor 4 (5-camera)', description: 'Complete home coverage', price: 299.99 },
+                { id: 'blink-doorbell', name: 'Blink Video Doorbell', description: 'Wire-free doorbell, 2-year battery', price: 49.99 },
+                { id: 'blink-floodlight', name: 'Blink Wired Floodlight Camera', description: '2600 lumens LED floodlight + camera', price: 99.99 },
+                { id: 'blink-sync-module', name: 'Sync Module 2', description: 'Hub for Blink cameras with local storage', price: 34.99 },
+                { id: 'blink-solar-panel', name: 'Solar Panel Mount', description: 'Keep outdoor cameras charged', price: 29.99 },
+                { id: 'blink-sub-plus', name: 'Blink Subscription Plus (1 year)', description: 'Cloud storage, all devices', price: 100.00 }
+            ]
+        },
+        'smartthings': {
+            name: 'Samsung SmartThings',
+            products: [
+                { id: 'st-hub-2', name: 'Aeotec Smart Home Hub 2', description: 'Matter-certified, Zigbee + Thread', price: 119.99 },
+                { id: 'st-station', name: 'SmartThings Station', description: 'Hub + wireless charger combo', price: 59.99 },
+                { id: 'st-button', name: 'SmartThings Button', description: 'Trigger automations with one press', price: 19.99 },
+                { id: 'st-motion', name: 'SmartThings Motion Sensor', description: 'Detect motion and temperature', price: 24.99 },
+                { id: 'st-multipurpose', name: 'Multipurpose Sensor', description: 'Door/window, vibration, temperature', price: 24.99 },
+                { id: 'st-water-leak', name: 'Water Leak Sensor', description: 'Flood detection alerts', price: 19.99 },
+                { id: 'st-outlet', name: 'Smart Outlet', description: 'Turn any outlet into smart outlet', price: 24.99 },
+                { id: 'st-cam-indoor', name: 'SmartThings Indoor Cam', description: '1080p with person detection', price: 89.99 },
+                { id: 'st-cam-outdoor', name: 'SmartThings Outdoor Cam', description: 'Weather-resistant security', price: 89.99 },
+                { id: 'st-tracker', name: 'SmartThings Tracker', description: 'GPS tracking for pets, kids, items', price: 99.99 }
+            ]
+        }
+    };
+
+    // Modal DOM elements
+    const productModal = document.getElementById('product-modal');
+    const productList = document.getElementById('product-list');
+    const modalTotal = document.getElementById('modal-total');
+    const modalClose = document.querySelector('.product-modal__close');
+    const modalOverlay = document.querySelector('.product-modal__overlay');
+    const modalClear = document.getElementById('modal-clear');
+    const modalQuote = document.getElementById('modal-quote');
+    const modalTitle = document.querySelector('.product-modal__title');
+
+    let selectedProducts = [];
+    let currentSuite = null;
+
+    // Open modal with products
+    function openProductModal(suiteId) {
+        const suite = productData[suiteId];
+        if (!suite) return;
+
+        currentSuite = suiteId;
+        selectedProducts = [];
+
+        // Update modal title
+        modalTitle.textContent = suite.name + ' Products';
+
+        // Render products
+        renderProducts(suite.products);
+        updateTotal();
+
+        // Show modal
+        productModal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+
+    // Close modal
+    function closeProductModal() {
+        productModal.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    // Render products in modal
+    function renderProducts(products) {
+        productList.innerHTML = products.map(product => `
+            <div class="product-item" data-id="${product.id}" data-price="${product.price}">
+                <div class="product-item__checkbox">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                        <polyline points="20 6 9 17 4 12"/>
+                    </svg>
+                </div>
+                <div class="product-item__info">
+                    <div class="product-item__name">${product.name}</div>
+                    <div class="product-item__description">${product.description}</div>
+                </div>
+                <div class="product-item__price">$${product.price.toFixed(2)}</div>
+            </div>
+        `).join('');
+
+        // Add click handlers
+        productList.querySelectorAll('.product-item').forEach(item => {
+            item.addEventListener('click', () => {
+                toggleProduct(item);
+            });
+        });
+    }
+
+    // Toggle product selection
+    function toggleProduct(item) {
+        const productId = item.dataset.id;
+        const price = parseFloat(item.dataset.price);
+
+        if (item.classList.contains('selected')) {
+            item.classList.remove('selected');
+            selectedProducts = selectedProducts.filter(p => p.id !== productId);
+        } else {
+            item.classList.add('selected');
+            selectedProducts.push({ id: productId, price });
+        }
+
+        updateTotal();
+    }
+
+    // Update total price
+    function updateTotal() {
+        const total = selectedProducts.reduce((sum, p) => sum + p.price, 0);
+        modalTotal.textContent = '$' + total.toFixed(2);
+    }
+
+    // Clear selection
+    function clearSelection() {
+        selectedProducts = [];
+        productList.querySelectorAll('.product-item').forEach(item => {
+            item.classList.remove('selected');
+        });
+        updateTotal();
+    }
+
+    // Event listeners for hardware suite buttons
+    document.querySelectorAll('.hardware-suite__btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+            const suiteId = this.dataset.suite;
+            openProductModal(suiteId);
+        });
+    });
+
+    // Modal close handlers
+    if (modalClose) {
+        modalClose.addEventListener('click', closeProductModal);
+    }
+
+    if (modalOverlay) {
+        modalOverlay.addEventListener('click', closeProductModal);
+    }
+
+    if (modalClear) {
+        modalClear.addEventListener('click', clearSelection);
+    }
+
+    // Close modal on escape
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && productModal.classList.contains('active')) {
+            closeProductModal();
+        }
+    });
+
+    // Quote button - close modal and scroll to contact
+    if (modalQuote) {
+        modalQuote.addEventListener('click', function(e) {
+            if (selectedProducts.length > 0) {
+                // Store selection in session for contact form
+                const selectedInfo = selectedProducts.map(p => {
+                    const suite = productData[currentSuite];
+                    const product = suite.products.find(prod => prod.id === p.id);
+                    return product ? product.name : p.id;
+                }).join(', ');
+
+                // Pre-fill message if contact form exists
+                const messageField = document.getElementById('message');
+                if (messageField && messageField.value === '') {
+                    const total = selectedProducts.reduce((sum, p) => sum + p.price, 0);
+                    messageField.value = `Interested in ${productData[currentSuite].name} products:\n\n${selectedInfo}\n\nEstimated hardware: $${total.toFixed(2)}\n\nPlease provide a quote including installation.`;
+                }
+            }
+            closeProductModal();
+        });
+    }
+
+    // Add scroll animation to hardware suites
+    const hardwareSuites = document.querySelectorAll('.hardware-suite, .management-option');
+    hardwareSuites.forEach((el, index) => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(30px)';
+        el.style.transition = `opacity 0.6s ease ${index * 0.1}s, transform 0.6s ease ${index * 0.1}s`;
+        observer.observe(el);
+    });
+
 })();
